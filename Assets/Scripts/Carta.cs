@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 
 // classe publica e construtor de cartas
@@ -15,8 +16,9 @@ public class Carta : MonoBehaviour
 	public int habilidade;
 	public int equipamento;
 	public int inteligencia;
+	public Texture texturaCarta;
     
-	public Carta(string _id,string _nome,int For, int vel, int habi,int equip, int inte)
+	public Carta(string _id,string _nome,int For, int vel, int habi,int equip, int inte, Texture tex)
 	{
 		id = _id;
 		nome = _nome;
@@ -25,6 +27,7 @@ public class Carta : MonoBehaviour
 		habilidade = habi;
 		equipamento = equip;
 		inteligencia = inte;
+		texturaCarta = tex;
 	} 
 
 
